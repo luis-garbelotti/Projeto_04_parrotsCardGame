@@ -1,5 +1,11 @@
 let numeroDeCartas = 0;
+let cadaCarta;
 let todasAsCartas = [];
+
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
 
 function inicioDeJogo(){
 
@@ -14,9 +20,11 @@ if (numeroDeCartas % 2 !== 0 || numeroDeCartas < 4 || numeroDeCartas > 14) {
 
 
 function sortearCartas () {
-    // todasAsCartas.length = numeroDeCartas;
 
-    for (let i = 0; i < numeroDeCartas; i++) {
-        todasAsCartas.push(i);
+    for( let i = 0; i < numeroDeCartas; i++){
+        const tirarCartas = document.querySelector(".escondido");
+        tirarCartas.classList.remove('escondido');
+        
     }
+    
 }

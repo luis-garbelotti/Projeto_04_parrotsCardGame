@@ -4,11 +4,14 @@
 
 body {
     height: 629px;
+
+    background-color: #EEF9BF;
     font-family: 'Roboto';
 
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -26,19 +29,29 @@ header {
     text-align: center;
 
     color: #75B79E;
-    background-color: #EEF9BF;
 }
 
 main {
-    width: 100%;
+    width: 1110px;
     height: 100%;
     padding-top: 47px;
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
 
-    background-color: #EEF9BF;
+}
+
+.conjunto  {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.escondido {
+    display: none;
 }
 
 .card {
