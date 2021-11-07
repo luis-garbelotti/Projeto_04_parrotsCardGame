@@ -1,10 +1,9 @@
 let numeroDeCartas = 0;
-let cadaCarta;
 let todasAsCartas = [];
 
-let aleatoria;
 let tirarCartas;
-let diferenca = 0;
+
+
 
 function comparador() { 
 	return Math.random() - 0.5; 
@@ -35,20 +34,20 @@ function mostrarCartas () {
     for( let i = 0; i < numeroDeCartas; i++){
         tirarCartas = document.querySelector(".escondido");
         tirarCartas.classList.remove('escondido');
-        tirarCartas.innerHTML = `<div class="card card0" data-identifier="card">
-                                    <div class="front-face face" data-identifier="front-face">
+        tirarCartas.innerHTML = `   <div class="front-face face"  data-identifier="front-face">
                                         <img src="Arquivos/front.png" alt="frente-da-carta">
                                     </div>
                                     <div class="back-face face" data-identifier="back-face">
                                         <img src="${todasAsCartas[i]}">
-                                    </div>
-                                </div>`;
+                                    </div>  `;
     }
+    
 }
 
-function virandoCarta () {
+function virarCarta (carta) {
 
-}
+    carta.children[0].classList.add('virada-frente');
+    carta.children[1].classList.add('virada-verso');
 
-
+} 
 

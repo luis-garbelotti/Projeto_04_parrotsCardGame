@@ -87,17 +87,24 @@ main {
     transform: rotateY(180deg);
 }
 
-.card:hover .back-face {
+
+.virada-verso {
     transform: rotateY(0deg);
 }
 
-.card:hover .front-face {
+
+.virada-frente {
     transform: rotateY(-180deg);
 }
 
 .front-face img {
     width: 100px;
     height: 100px;
+
+}
+
+.face:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 535px) {
